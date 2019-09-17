@@ -5,7 +5,7 @@ import { ApiService } from '../shared/api.service';
 
 @Component({
   selector: 'app-admin',
-  template: `<p class="alert alert-danger">
+  template: `<p class="alert alert-info">
     This is the <strong>⚙ ADMIN</strong> component.
     It will not redirect you to the login server.
     - {{ apiResponse | async }}

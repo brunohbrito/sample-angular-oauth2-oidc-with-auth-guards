@@ -1,11 +1,12 @@
 import { AuthConfig } from 'angular-oauth2-oidc';
 
 export const authConfig: AuthConfig = {
-  issuer: 'https://demo.identityserver.io',
-  clientId: 'implicit',
+  issuer: 'http://sso.teste.work',
+  clientId: 'angular-demo',
   redirectUri: window.location.origin + '/index.html',
   silentRefreshRedirectUri: window.location.origin + '/silent-refresh.html',
-  scope: 'openid profile email api',
+  scope: 'openid profile email api_demo.api jp_api.user',
+  requireHttps: false,
   silentRefreshTimeout: 5000, // For faster testing
   timeoutFactor: 0.25, // For faster testing
   sessionChecksEnabled: true,
